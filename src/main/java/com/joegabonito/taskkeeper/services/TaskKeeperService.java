@@ -8,4 +8,6 @@ public interface TaskKeeperService  {
 
 	List<TaskKeeper> getList();
 
+	void save(TaskKeeper task);
+
 }

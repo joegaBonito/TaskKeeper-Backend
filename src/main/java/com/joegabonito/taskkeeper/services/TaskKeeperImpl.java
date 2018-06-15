@@ -25,4 +25,9 @@ public class TaskKeeperImpl implements TaskKeeperService {
 		return (List<TaskKeeper>) taskKeeperRepositories.findAll();
 	}
 
+	@Override
+	public void save(TaskKeeper task) {
+		taskKeeperRepositories.save(task);
+	}
+
 }
